@@ -18,17 +18,107 @@
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
-            "atomType": "Text",
-            "name": "Text",
-            "x": 0.3134920634920635,
-            "y": 0.5682451253481894,
-            "uniqueID": 1729268992943,
-            "ioValues": [],
-            "description": "Creates a new text sketch.",
-            "fontFamily": "ROBOTO"
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.3313492063492064,
+            "y": 0.5626740947075208,
+            "uniqueID": 1729269516682,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 1
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.44907407407407407,
+            "y": 0.7047353760445683,
+            "uniqueID": 1729269524279,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1729269516682
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 90
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "ShrinkWrap",
+            "name": "Shrink Wrap",
+            "x": 0.5535714285714286,
+            "y": 0.41225626740947074,
+            "uniqueID": 1729269533666,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1729269524279
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1729269516682
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1729269524279
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1729269516682
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 1729269516682,
+            "ap2ID": 1729269524279
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1729269516682,
+            "ap2ID": 1729269533666
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1729269524279,
+            "ap2ID": 1729269533666
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
