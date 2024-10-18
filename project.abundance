@@ -1,13 +1,33 @@
 {
     "atomType": "Molecule",
-    "name": "Try wrapping text",
+    "name": "Try-wrapping-text",
     "x": 0,
     "y": 0,
     "uniqueID": 1729268972489,
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": 1729268981221,
+            "ioValues": [],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Text",
+            "name": "Text",
+            "x": 0.3134920634920635,
+            "y": 0.5682451253481894,
+            "uniqueID": 1729268992943,
+            "ioValues": [],
+            "description": "Creates a new text sketch.",
+            "fontFamily": "ROBOTO"
+        }
+    ],
     "allConnectors": [],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
