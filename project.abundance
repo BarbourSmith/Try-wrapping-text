@@ -64,8 +64,8 @@
         {
             "atomType": "ShrinkWrap",
             "name": "Shrink Wrap",
-            "x": 0.5535714285714286,
-            "y": 0.41225626740947074,
+            "x": 0.6078042328042328,
+            "y": 0.28690807799442897,
             "uniqueID": 1729269533666,
             "ioValues": [
                 {
@@ -94,6 +94,28 @@
                 }
             ],
             "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
+        },
+        {
+            "atomType": "Text",
+            "name": "Text",
+            "x": 0.6957671957671957,
+            "y": 0.7186629526462396,
+            "uniqueID": 1734648619456,
+            "ioValues": [],
+            "description": "Creates a new text sketch.",
+            "fontFamily": "ROBOTO",
+            "selectedFontIndex": 1
+        },
+        {
+            "atomType": "Text",
+            "name": "Text",
+            "x": 0.6924603174603174,
+            "y": 0.38718662952646243,
+            "uniqueID": 1734648651372,
+            "ioValues": [],
+            "description": "Creates a new text sketch.",
+            "fontFamily": "ANTON",
+            "selectedFontIndex": 0
         }
     ],
     "allConnectors": [
